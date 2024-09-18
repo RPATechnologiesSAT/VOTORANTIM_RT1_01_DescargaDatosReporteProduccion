@@ -1,0 +1,86 @@
+﻿{"Settings": [
+        {
+            "Name": "ExScreenshotsFolderPath",
+            "Value": "Exceptions_Screenshots",
+            "Description": "Carpeta para el almacenamiento de capturas de pantalla de error"
+        },
+        {
+            "Name": "DebugMode",
+            "Value": "True",
+            "Description": "Booleano en tipo string para realizar o evitar ciertas acciones segun el modo de ejecución. Por defecto, en true, no se ejecutará el cleaning Desktop."
+        },
+        {
+            "Name": "Retry",
+            "Value": 1,
+            "Description": "Booleano en tipo string para realizar o evitar ciertas acciones segun el modo de ejecución. Por defecto, en true, no se ejecutará el cleaning Desktop."
+        }, 
+		{
+            "Name": "TransaccionSE16N",
+			"Value": "SE16N",
+            "Description": "Transaccion que nos lleva al asset SE16N"
+        },
+		{
+			"Name": "TransaccionZGCSD004",
+			"Value": "ZGCSD004",
+            "Description": "Transaccion que nos lleva al asset /NZGCSD004"
+		},
+		{
+			"Name": "TransaccionZEUSD013",
+			"Value": "ZEUSD013",
+            "Description": "Transaccion que nos lleva al asset /NZEUSD013"
+		},
+		{
+			"Name": "AsuntoCorreo",
+			"Value": "Informe Descarga Datos Reporte Produccion",
+            "Description": "Asunto para correo descarga datos reporte produccion"
+		},
+		{
+			"Name": "OrquestratorFolderName",
+			"Value": "Shared",
+            "Description": "Carpeta donde se alojan algunos assets"
+		}
+    ],
+
+    "Assets": [
+		{
+			"Name": "ListMails",
+            "Description": "Descripcion del Asset"
+		},
+		{
+			"Name": "SAP_GC_ConnectionName",
+            "Description": "Descripcion del Asset"
+		},
+		{
+			"Name": "SAP_GC_ConnectionName_Prod",
+            "Description": "Descripcion del Asset"
+		},
+		{
+			"Name": "SAP_Language",
+            "Description": "Descripcion del Asset"
+		},
+		{
+			"Name": "SAP_Client",
+            "Description": "Descripcion del Asset"
+		},
+		{
+			"Name":"URL_FicherosSharePoint",
+			"Description": "Direccion URL sharepoint"
+		}
+    ],
+ 
+    "Credentials": [
+        {
+            "Name": "Cred_SAP_Robot",
+            "OrchestratorFolder": "Shared"
+        },
+		{
+			"Name": "Cred_SAP_Ivan",
+            "OrchestratorFolder": "ReporteProduccion"
+		},
+		{
+			"Name": "Credential_Office",
+            "OrchestratorFolder": "Shared"
+		}
+		
+    ]
+}

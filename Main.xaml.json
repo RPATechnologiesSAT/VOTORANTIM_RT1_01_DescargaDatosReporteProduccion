@@ -1,0 +1,57 @@
+{
+  "DisplayName": "Main",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "in_OrchestratorQueueName",
+      "DisplayName": "in_OrchestratorQueueName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_OrchestratorFolderName",
+      "DisplayName": "in_OrchestratorFolderName",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "Shared",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_ConfigPath",
+      "DisplayName": "in_ConfigPath",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "in_dt_reporte",
+      "DisplayName": "in_dt_reporte",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}
