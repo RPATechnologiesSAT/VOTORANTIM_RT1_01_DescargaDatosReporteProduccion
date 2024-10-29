@@ -10,7 +10,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,4654</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1513,4698</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>DescargaFicheros_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -123,28 +123,28 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1370,4589" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="1408,4633" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1308,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'DescargaFicherosSP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1308,4164" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1346,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'DescargaFicherosSP' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1346,4206" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="DescargaFicheros" sap:VirtualizedContainerService.HintSize="1270,3904" sap2010:WorkflowViewState.IdRef="Sequence_1">
+        <Sequence DisplayName="DescargaFicheros" sap:VirtualizedContainerService.HintSize="1308,3945" sap2010:WorkflowViewState.IdRef="Sequence_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos" sap:VirtualizedContainerService.HintSize="1208,3816" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V2" WindowResize="Maximize">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos" sap:VirtualizedContainerService.HintSize="1246,3857" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V2" WindowResize="Maximize">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1174,3576" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1212,3577" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="user" />
                     <Variable x:TypeArguments="ss:SecureString" Name="pass" />
@@ -154,7 +154,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Inicio sesión SharePoint" sap:VirtualizedContainerService.HintSize="1112,693" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                  <Sequence DisplayName="Inicio sesión SharePoint" sap:VirtualizedContainerService.HintSize="1150,693" sap2010:WorkflowViewState.IdRef="Sequence_10">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -306,7 +306,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
                   </Sequence>
-                  <Sequence DisplayName="Descarga ficheros Excel" sap:VirtualizedContainerService.HintSize="1112,2793" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <Sequence DisplayName="Descarga ficheros Excel" sap:VirtualizedContainerService.HintSize="1150,2794" sap2010:WorkflowViewState.IdRef="Sequence_15">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="si:FileInfo" Name="tempFile" />
                     </Sequence.Variables>
@@ -316,13 +316,13 @@
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1050,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Navegando a ficheros Excel&quot;]" />
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Plantillas_Robot'" sap:VirtualizedContainerService.HintSize="1050,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1088,175" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Navegando a ficheros Excel&quot;]" />
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Plantillas_Robot'" sap:VirtualizedContainerService.HintSize="1088,189" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="416, 441, 122, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl type='button' aaname='*Plantillas_Robot*' /&gt;" FuzzySelectorArgument="&lt;webctrl type='button' aaname='Plantillas_Robot' tag='BUTTON' class='ms-Link root_871ff242 nameField_a4c939b0 clickable_a4c939b0 overflow_85ed223c pre_85ed223c' check:text='Plantillas_Robot' /&gt;" Guid="ae4a7475-e49a-4459-9418-36642e19d2be" ImageBase64="" InformativeScreenshot="eb616d954670c5b873f2d3d574e74645.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                       </uix:NClick.Target>
                     </uix:NClick>
-                    <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[tempFile]" sap:VirtualizedContainerService.HintSize="1050,1077" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp,dwn,crdownload">
+                    <ui:GetLastDownloadedFile FileResource="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[tempFile]" sap:VirtualizedContainerService.HintSize="1088,1077" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1" IgnoreFiles="tmp,dwn,crdownload">
                       <ui:GetLastDownloadedFile.Body>
                         <ActivityAction>
                           <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,789" sap2010:WorkflowViewState.IdRef="Sequence_16">
@@ -373,10 +373,10 @@
                         </ActivityAction>
                       </ui:GetLastDownloadedFile.Body>
                     </ui:GetLastDownloadedFile>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1050,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Descomprimiento fichero en carpeta /Data&quot;]" />
-                    <uascw:ExtractFiles Content="{x:Null}" DestinationFolderInfo="{x:Null}" File="{x:Null}" Password="{x:Null}" CodePage="Default" ConflictResolution="Replace" DestinationFolder="[Environment.CurrentDirectory + &quot;\Data&quot;]" DisplayName="Extract/Unzip Files" ExtractToADedicatedFolder="False" FileToExtract="[tempFile.ToString]" sap:VirtualizedContainerService.HintSize="1050,239" sap2010:WorkflowViewState.IdRef="ExtractFiles_1" SkipUnsupportedFiles="False" />
-                    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="1050,112" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[tempFile.ToString]" />
-                    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[Environment.CurrentDirectory +&quot;\Data\00_Plantillas_Robot&quot;]" sap:VirtualizedContainerService.HintSize="1050,711" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1088,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Descomprimiento fichero en carpeta /Data&quot;]" />
+                    <uascw:ExtractFiles Content="{x:Null}" DestinationFolderInfo="{x:Null}" File="{x:Null}" Password="{x:Null}" CodePage="Default" ConflictResolution="Replace" DestinationFolder="[Environment.CurrentDirectory + &quot;\Data&quot;]" DisplayName="Extract/Unzip Files" ExtractToADedicatedFolder="False" FileToExtract="[tempFile.ToString]" sap:VirtualizedContainerService.HintSize="1088,239" sap2010:WorkflowViewState.IdRef="ExtractFiles_1" SkipUnsupportedFiles="False" />
+                    <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="1088,112" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="[tempFile.ToString]" />
+                    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[Environment.CurrentDirectory +&quot;\Data\00_Plantillas_Robot ( No tocar )&quot;]" sap:VirtualizedContainerService.HintSize="1088,712" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                       <ui:ForEachFileX.Body>
                         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                           <ActivityAction.Argument1>
@@ -385,14 +385,14 @@
                           <ActivityAction.Argument2>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           </ActivityAction.Argument2>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="993,424" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1054,425" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[If(CurrentFile.ToString.Contains(&quot;SE16N&quot;), &quot;SE16N&quot;, If(CurrentFile.ToString.Contains(&quot;OTD&quot;), &quot;OTD&quot;, If(CurrentFile.ToString.Contains(&quot;LT&quot;), &quot;LT&quot;, &quot;DEFAULT&quot;)))]" sap:VirtualizedContainerService.HintSize="931,334" sap2010:WorkflowViewState.IdRef="Switch`1_1">
-                              <Assign x:Key="SE16N" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[If(CurrentFile.ToString.Contains(&quot;SE16N&quot;), &quot;SE16N&quot;, If(CurrentFile.ToString.Contains(&quot;OTD&quot;), &quot;OTD&quot;, If(CurrentFile.ToString.Contains(&quot;LT&quot;), &quot;LT&quot;, &quot;DEFAULT&quot;)))]" sap:VirtualizedContainerService.HintSize="992,335" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                              <Assign x:Key="SE16N" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_4">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[out_SE16N]</OutArgument>
                                 </Assign.To>
@@ -400,7 +400,7 @@
                                   <InArgument x:TypeArguments="x:String">[CurrentFile.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <Assign x:Key="OTD" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign x:Key="OTD" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[out_OTD]</OutArgument>
                                 </Assign.To>
@@ -408,7 +408,7 @@
                                   <InArgument x:TypeArguments="x:String">[CurrentFile.ToString]</InArgument>
                                 </Assign.Value>
                               </Assign>
-                              <Assign x:Key="LT" sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_6">
+                              <Assign x:Key="LT" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_6">
                                 <Assign.To>
                                   <OutArgument x:TypeArguments="x:String">[out_LT]</OutArgument>
                                 </Assign.To>
@@ -438,7 +438,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1274,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1296,23" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -462,6 +462,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1308,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando secuencia 'DescargaFicherosSP' -----&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1330,166" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando secuencia 'DescargaFicherosSP' -----&quot;]" />
   </Sequence>
 </Activity>

@@ -7,7 +7,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1793,4773</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1456,3401</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SubidaFicherosSP_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -125,29 +125,35 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SubidaFicherosSP" sap:VirtualizedContainerService.HintSize="962,4708" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SubidaFicherosSP" sap:VirtualizedContainerService.HintSize="1466,3336" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="900,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'SubidaFicherosSP' -----&quot;]" />
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="900,4283" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1404,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;----- Iniciando secuencia 'SubidaFicherosSP' -----&quot;]" />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1404,2911" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SubidaFicheros" sap:VirtualizedContainerService.HintSize="862,4023" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="SubidaFicheros" sap:VirtualizedContainerService.HintSize="1366,2651" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos" sap:VirtualizedContainerService.HintSize="800,3935" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Use Browser Chrome: Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos" sap:VirtualizedContainerService.HintSize="1304,2563" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="766,3655" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1270,2323" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="user" />
                     <Variable x:TypeArguments="ss:SecureString" Name="pass" />
@@ -158,7 +164,7 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Inicio sesión SharePoint" sap:VirtualizedContainerService.HintSize="704,57" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence DisplayName="Inicio sesión SharePoint" sap:VirtualizedContainerService.HintSize="1208,57" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -310,52 +316,69 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
                   </Sequence>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Nuevo'" sap:VirtualizedContainerService.HintSize="704,189" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="316, 264, 116, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='appRoot' parentname='Nuevo' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='appRoot' parentname='Nuevo' tag='SPAN' type='' class='ms-Button-flexContainer flexContainer-156' aaname='' check:innerText='&amp;#xD;&amp;#xA;Nuevo&amp;#xD;&amp;#xA;' /&gt;" Guid="c1137400-ac88-489a-95f1-1cdde5c0982e" ImageBase64="" InformativeScreenshot="76283810e42c9be8f94af9dda939dc31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Carpeta'" sap:VirtualizedContainerService.HintSize="704,189" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="320, 302, 204, 36" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentname='Carpeta' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='Carpeta' tag='DIV' type='' class='ms-ContextualMenu-linkContent linkContent-266' aaname='' check:innerText='Carpeta' /&gt;" Guid="5792f866-c3ec-4db9-ba5f-7d58dc2f30b3" ImageBase64="" InformativeScreenshot="d9c624899c750ebc083c2ecd301377c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                  </uix:NClick>
-                  <Assign sap:VirtualizedContainerService.HintSize="704,114" sap2010:WorkflowViewState.IdRef="Assign_4">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">[FileName]</OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">["Ficheros " + now.AddDays(-1).ToString("dd-MM-yyyy")]</InArgument>
-                    </Assign.Value>
-                  </Assign>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nombre'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="704,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Text="[FileName]" Version="V3">
-                    <uix:NTypeInto.Target>
-                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="773, 510, 390, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ms-TextField-field field-437' placeholder='Escribe el nombre de tu carpeta' aaname='' /&gt;" Guid="d5f56529-f67e-43d6-87fc-157000093d5c" ImageBase64="" InformativeScreenshot="ea0f3a88d0f66a8b1cfb621ba2c920f8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target DesignTimeRectangle="772, 479, 392, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Nombre' parentid='ModalFocusTrapZone450' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Nombre' parentid='ModalFocusTrapZone450' tag='DIV' type='' class='nameDialogFieldHeaders_b08874f2' check:innerText='Nombre' /&gt;" Guid="bce77be5-5968-41d0-90de-acebd6d08dfd" SearchSteps="FuzzySelector" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NTypeInto.Target>
-                  </uix:NTypeInto>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crear'" sap:VirtualizedContainerService.HintSize="704,189" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="980, 705, 80, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Crear' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Crear' parentid='ModalFocusTrapZone450' tag='BUTTON' type='button' class='ms-Button ms-Button--primary is-disabled root-433' check:innerText='Crear' /&gt;" Guid="6e46e685-2f68-44af-a668-1eaa7db97aa0" ImageBase64="" InformativeScreenshot="ebca2d840f3f90f51740c0a7e778972f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
-                        <uix:TargetAnchorable.Anchors>
-                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target DesignTimeRectangle="1001, 714, 38, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl id='id__525' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id__525' tag='SPAN' type='' class='ms-Button-label label-434' aaname='Crear' check:innerText='Crear' /&gt;" Guid="2e7011ca-f4c6-42e4-afe8-211a69476eec" SearchSteps="FuzzySelector" />
-                          </scg:List>
-                        </uix:TargetAnchorable.Anchors>
-                      </uix:TargetAnchorable>
-                    </uix:NClick.Target>
-                  </uix:NClick>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Plantillas_Robot'" sap:VirtualizedContainerService.HintSize="704,189" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
-                    <uix:NClick.Target>
-                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="408, 312, 97, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aria-role='link' type='button' aaname='{0}' /&gt;&quot;, FileName)]" FuzzySelectorArgument="&lt;webctrl aria-role='link' type='button' aaname='Plantillas_Robot' tag='BUTTON' class='ms-Link root_871ff242 nameField_a4c939b0 clickable_a4c939b0 overflow_85ed223c pre_85ed223c' check:text='Plantillas_Robot' /&gt;" Guid="c5d2fbd8-aa58-44c1-b599-b1a02a3f55a2" ImageBase64="" InformativeScreenshot="5adad21fddfc6c43dc8d94f682024b80.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-                    </uix:NClick.Target>
-                  </uix:NClick>
-                  <Sequence DisplayName="Subida ficheros Excel" sap:VirtualizedContainerService.HintSize="704,2242" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1208,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                    <ui:CommentOut.Body>
+                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,1199" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Nuevo'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="316, 264, 116, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='appRoot' parentname='Nuevo' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='appRoot' parentname='Nuevo' tag='SPAN' type='' class='ms-Button-flexContainer flexContainer-156' aaname='' check:innerText='&amp;#xD;&amp;#xA;Nuevo&amp;#xD;&amp;#xA;' /&gt;" Guid="c1137400-ac88-489a-95f1-1cdde5c0982e" ImageBase64="" InformativeScreenshot="76283810e42c9be8f94af9dda939dc31.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Carpeta'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="320, 302, 204, 36" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentname='Carpeta' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='Carpeta' tag='DIV' type='' class='ms-ContextualMenu-linkContent linkContent-266' aaname='' check:innerText='Carpeta' /&gt;" Guid="5792f866-c3ec-4db9-ba5f-7d58dc2f30b3" ImageBase64="" InformativeScreenshot="d9c624899c750ebc083c2ecd301377c0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[FileName]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">["Ficheros " + now.AddDays(-1).ToString("dd-MM-yyyy")]</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Nombre'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Text="[FileName]" Version="V3">
+                          <uix:NTypeInto.Target>
+                            <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="773, 510, 390, 30" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='ms-TextField-field field-437' placeholder='Escribe el nombre de tu carpeta' aaname='' /&gt;" Guid="d5f56529-f67e-43d6-87fc-157000093d5c" ImageBase64="" InformativeScreenshot="ea0f3a88d0f66a8b1cfb621ba2c920f8.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="772, 479, 392, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Nombre' parentid='ModalFocusTrapZone450' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Nombre' parentid='ModalFocusTrapZone450' tag='DIV' type='' class='nameDialogFieldHeaders_b08874f2' check:innerText='Nombre' /&gt;" Guid="bce77be5-5968-41d0-90de-acebd6d08dfd" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NTypeInto.Target>
+                        </uix:NTypeInto>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Crear'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="980, 705, 80, 32" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="&lt;webctrl aaname='Crear' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Crear' parentid='ModalFocusTrapZone450' tag='BUTTON' type='button' class='ms-Button ms-Button--primary is-disabled root-433' check:innerText='Crear' /&gt;" Guid="6e46e685-2f68-44af-a668-1eaa7db97aa0" ImageBase64="" InformativeScreenshot="ebca2d840f3f90f51740c0a7e778972f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target DesignTimeRectangle="1001, 714, 38, 14" ElementType="Text" FullSelectorArgument="&lt;webctrl id='id__525' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='id__525' tag='SPAN' type='' class='ms-Button-label label-434' aaname='Crear' check:innerText='Crear' /&gt;" Guid="2e7011ca-f4c6-42e4-afe8-211a69476eec" SearchSteps="FuzzySelector" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Plantillas_Robot'" sap:VirtualizedContainerService.HintSize="434,180" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="408, 312, 97, 20" DesignTimeScaleFactor="1" ElementType="Button" FullSelectorArgument="[string.Format(&quot;&lt;webctrl aria-role='link' type='button' aaname='{0}' /&gt;&quot;, FileName)]" FuzzySelectorArgument="&lt;webctrl aria-role='link' type='button' aaname='Plantillas_Robot' tag='BUTTON' class='ms-Link root_871ff242 nameField_a4c939b0 clickable_a4c939b0 overflow_85ed223c pre_85ed223c' check:text='Plantillas_Robot' /&gt;" Guid="c5d2fbd8-aa58-44c1-b599-b1a02a3f55a2" ImageBase64="" InformativeScreenshot="5adad21fddfc6c43dc8d94f682024b80.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ui:CommentOut.Body>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:CommentOut>
+                  <Sequence DisplayName="Subida ficheros Excel" sap:VirtualizedContainerService.HintSize="1208,1973" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="si:FileInfo" Name="tempFile" />
                     </Sequence.Variables>
@@ -364,8 +387,8 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="642,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Subida de ficheros a Excel&quot;]" />
-                    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[Environment.CurrentDirectory +&quot;\Temp&quot;]" sap:VirtualizedContainerService.HintSize="642,1945" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1146,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Subida de ficheros a Excel&quot;]" />
+                    <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="[Environment.CurrentDirectory +&quot;\Temp&quot;]" sap:VirtualizedContainerService.HintSize="1146,1676" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
                       <ui:ForEachFileX.Body>
                         <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
                           <ActivityAction.Argument1>
@@ -374,31 +397,31 @@
                           <ActivityAction.Argument2>
                             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                           </ActivityAction.Argument2>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="608,1658" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1112,1389" sap2010:WorkflowViewState.IdRef="Sequence_17">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[CurrentFile.ToString.Contains(now.ToString(&quot;MMMM_yyyy&quot;))]" sap:VirtualizedContainerService.HintSize="546,1568" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If Condition="[CurrentFile.ToString.Contains(&quot;Mensual&quot;)]" sap:VirtualizedContainerService.HintSize="1050,1299" sap2010:WorkflowViewState.IdRef="If_1">
                               <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,1302" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="1016,1033" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cargar'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Cargar'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2Ftet&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="444, 264, 101, 32" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl parentid='appRoot' parentname='Cargar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='appRoot' parentname='Cargar' tag='SPAN' type='' class='ms-Button-flexContainer flexContainer-161' aaname='' check:innerText='&amp;#xD;&amp;#xA;Cargar&amp;#xD;&amp;#xA;' /&gt;" Guid="63d453da-d6a7-44ac-90c2-40581dba5807" ImageBase64="" InformativeScreenshot="9995dbfe35ff4db5c1676c55af974925.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - tet - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Archivos'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Archivos'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA%2Ftet&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" DesignTimeRectangle="452, 302, 160, 36" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl parentname='Archivo*' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='Archivos' tag='SPAN' type='' class='ms-ContextualMenu-itemText label-363' aaname='Archivos' check:innerText='Archivos' /&gt;" Guid="ac540ba8-a9ac-435d-b87e-81f3cd7e0cfb" ImageBase64="" InformativeScreenshot="f5451a51c4c1408e2009ce71a29cdc09.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - tet - Todos los documentos' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
                                     </uix:NClick.Target>
                                   </uix:NClick>
-                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="450,836" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="3d38a945-e261-423c-ac3b-79f2c5e0ee3e" Version="V2">
+                                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Open" sap:VirtualizedContainerService.HintSize="954,57" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" OpenMode="Never" ScopeGuid="3d38a945-e261-423c-ac3b-79f2c5e0ee3e" Version="V2">
                                     <uix:NApplicationCard.Body>
                                       <ActivityAction x:TypeArguments="x:Object">
                                         <ActivityAction.Argument>
@@ -426,7 +449,53 @@
                                     <uix:NApplicationCard.TargetApp>
                                       <uix:TargetApp Area="189, 149, 947, 366" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKsSURBVDhPZdPLTxNRFAbw2WEkUYLRIEGsQEkptp0+NITntKAFgUDUlYmYGI0r/wAVdOuKKTZQQZ4+Y8LShRGxIBRoTBhdsbMG6AN5tIBGw0zv553bgRQ5yS/fnd57TiYzU+7/WhUcQsxp96y47KEVlwM/XQ4SczqkmGAfigq8Tjt2sEICnxUTHCJtBiPYSVSwIV2khqq2iepZrS1V6g8RwSZFa2ysia7pYSs9bCUsq3gSTrNcaZH2DYlU8yLdQLrlSmo3K8xkqcKMpUoLWFKLFWaRNfNvWnUjt6rYJp1M6AaiV+vxd/4LlpcS2PpDQOJ+JKVmKEEbSVLKnBXJoJXIs7zA8a9ah9y+Jiw4LVgsNyF8xc0a7wz9wrlHCeaabxvhtQSU+XrIsyYos2bKROSZsx7O8rxF4l+04PHdKvwoK8XvyXE0dW7C9jBBxffcHtwGSQShzBg1JYQKcabhZphGmkhZ7yXM1VoQjidh6dhg+I44pWbqenk1DjlQDCWgJ3JAD3laD+7sYCNKNTfbBbK4GIepfQOmB+sUTXXNrjfY81CmCzRnGM7Y3xAyDjSQkv4G0DWCkW+48WwTxvvre0qpy94EyNp7KFP5mlOQp/IkrqTXLRr63DD01TOu121YiG2i1RuH4d4a00YHLsS2IAfPQ57MpU5C+azKHeIMvjqh2HcBxU8vYjedL69j7HuA3bI6bC78FV3vGmnjCSiUPHGcgT8n9WkX9dSJhT21hCYp6q6DqrC7lqjUdXUffUMfcqBMHKON2ZD92UhOZKc+JLV0opBV4HVKBV4XCik1mSdOlgOjeij+o0T2H4H8iZHgz9r/f1CH6LoEj84jgOYuUukrpw2ZmsOQxzM9B5rTiw7SUcOnxRopv7OavB3Nw854RmjnY4ZHHjskaMe04rh/A+kk+qOwHW8AAAAASUVORK5CYII=" InformativeScreenshot="8695364379ffaa945ea51be96cd2097c.png" Selector="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" Title="Open" />
                                     </uix:NApplicationCard.TargetApp>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                   </uix:NApplicationCard>
+                                  <uix:NCheckState DisplayName="Check App State 'Reemplazar'" sap:VirtualizedContainerService.HintSize="954,510" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                                    <uix:NCheckState.IfExists>
+                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,270" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Reemplazar'" sap:VirtualizedContainerService.HintSize="388,182" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6a559d2a-6c68-46ff-aba6-8f2b11dd14c3" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?ga=1&amp;id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;viewid=3326de0a%2Db4b7%2D4eda%2D8a71%2D319ef82c91e5" CVScreenId="bb9758c2-0768-41de-b20f-f9f5b5c03f9d" CvElementArea="1182, 292, 707, 26" CvTextArea="1509, 299, 56, 13" CvTextArgument="Reerplazar" CvType="Button" DesignTimeRectangle="1198, 295, 678, 22" DesignTimeScaleFactor="0.75" ElementType="Text" FullSelectorArgument="&lt;webctrl parentname='Reemplazar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='Reemplazar' tag='SPAN' type='' class='ms-Button-flexContainer ms-ButtonShim-flexContainer' aaname='Reemplazar' check:text='Reemplazar' /&gt;" Guid="8eec0eca-d469-4881-8c87-fabde3ba3d88" InformativeScreenshot="970f101db054b0eb846c34c8801808a1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target CVScreenId="bb9758c2-0768-41de-b20f-f9f5b5c03f9d" CvElementArea="1182, 292, 707, 26" CvTextArea="1509, 299, 56, 13" CvTextArgument="Reerplazar" CvType="Button" DesignTimeRectangle="1185, 294, 704, 24" ElementType="Button" FullSelectorArgument="&lt;webctrl name='Reemplazar' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl name='Reemplazar' tag='BUTTON' type='button' class='fui-Button r1alrhcs ms-Button root-413 ms-Button--default ms-ButtonShim--default commandButton_d3a7ef29 verticalButton_7bf3db39 ___11bzyem f10pi13n f14t3ns0 f1k6fduh f17mccla f1xqy1su f1ewtqcl f1g0x7ka f1gbmcue f1qch9an f1rh9g5y f2cu5sd figsok6 f1vdwobg f15fhrkf f1gl3qri fwzdp62 f492aqz f1eeugec f141lptb fx7fgq1 f1xbyz6e f1bq85fa fudw3ie f15sz26m f1ct40e8 f12btegu fhcypdg f1bzmdyv fnn62qi f1xvby9z fimu2fn f4l4af4 fdc9mbu ffomqby f1f9t5xu f1d2rq10 f1jhnwmq f1xxju6a fnzivq2 f1lsl8ci f1pmpucf f1wf1l0t fvz1td2 f10yf4zo f6lcd4c f9z738t f1wv6kb6 fxj6w0z f1jwakne fyud6fp fm0btye fah22ec f2fy8gp' aaname='Reemplazar' check:innerText='Reemplazar' /&gt;" Guid="a1268c3c-c14b-4dce-8617-bb8f71df310d" SearchSteps="FuzzySelector, CV" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </uix:NCheckState.IfExists>
+                                    <uix:NCheckState.IfNotExists>
+                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Sequence>
+                                    </uix:NCheckState.IfNotExists>
+                                    <uix:NCheckState.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://votorantimindustrial.sharepoint.com/teams/IndicadoresdeServicioLogsticaLTOTD/Documentos%20Compartilhados/Forms/AllItems.aspx?id=%2Fteams%2FIndicadoresdeServicioLogsticaLTOTD%2FDocumentos%20Compartilhados%2FGeneral%2FRobot%5FRPA&amp;p=true&amp;ga=1" CVScreenId="04c351d3-6c03-4be7-9c7e-a4461272a8b4" CvElementArea="660, 293, 650, 25" CvTextArea="957, 299, 56, 13" CvTextArgument="Reemplazar" CvType="Button" DesignTimeRectangle="674, 295, 622, 22" DesignTimeScaleFactor="0.75" ElementType="Text" FullSelectorArgument="&lt;webctrl parentname='Reemplazar' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='Reemplazar' tag='SPAN' type='' class='ms-Button-flexContainer ms-ButtonShim-flexContainer' aaname='Reemplazar' check:innerText='Reemplazar' /&gt;" Guid="f141b597-f28d-4308-8429-33f783a7194b" InformativeScreenshot="9e560d02611e42d58181cb938048c1dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='{}' title='Indicadores de Servicio Logística (LT / OTD) - Robot_RPA - Todos los documentos' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="04c351d3-6c03-4be7-9c7e-a4461272a8b4" CvElementArea="660, 293, 650, 25" CvTextArea="957, 299, 56, 13" CvTextArgument="Reemplazar" CvType="Button" DesignTimeRectangle="661, 294, 648, 24" ElementType="Button" FullSelectorArgument="&lt;webctrl name='Reemplazar' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl name='Reemplazar' tag='BUTTON' type='button' class='fui-Button r1alrhcs ms-Button root-377 ms-Button--default ms-ButtonShim--default commandButton_d3a7ef29 verticalButton_7bf3db39 ___11bzyem f10pi13n f14t3ns0 f1k6fduh f17mccla f1xqy1su f1ewtqcl f1g0x7ka f1gbmcue f1qch9an f1rh9g5y f2cu5sd figsok6 f1vdwobg f15fhrkf f1gl3qri fwzdp62 f492aqz f1eeugec f141lptb fx7fgq1 f1xbyz6e f1bq85fa fudw3ie f15sz26m f1ct40e8 f12btegu fhcypdg f1bzmdyv fnn62qi f1xvby9z fimu2fn f4l4af4 fdc9mbu ffomqby f1f9t5xu f1d2rq10 f1jhnwmq f1xxju6a fnzivq2 f1lsl8ci f1pmpucf f1wf1l0t fvz1td2 f10yf4zo f6lcd4c f9z738t f1wv6kb6 fxj6w0z f1jwakne fyud6fp fm0btye fah22ec f2fy8gp' aaname='Reemplazar' check:innerText='Reemplazar' /&gt;" Guid="5a8d5714-52f7-4273-9a80-07031df58c9b" SearchSteps="FuzzySelector, CV" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NCheckState.Target>
+                                  </uix:NCheckState>
                                 </Sequence>
                               </If.Then>
                               <If.Else>
@@ -450,7 +519,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEachFileX>
                   </Sequence>
-                  <Delay sap2010:Annotation.AnnotationText="" Duration="00:00:30" sap:VirtualizedContainerService.HintSize="704,146" sap2010:WorkflowViewState.IdRef="Delay_1">
+                  <Delay sap2010:Annotation.AnnotationText="" Duration="00:00:30" sap:VirtualizedContainerService.HintSize="1208,146" sap2010:WorkflowViewState.IdRef="Delay_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
@@ -467,7 +536,7 @@
         </Sequence>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="866,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="770,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -478,7 +547,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="Sequence_21">
+            <Sequence sap:VirtualizedContainerService.HintSize="416,374" sap2010:WorkflowViewState.IdRef="Sequence_21">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -491,6 +560,6 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="900,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando secuencia 'SubidaFicherosSP' -----&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="804,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;----- Finalizando secuencia 'SubidaFicherosSP' -----&quot;]" />
   </Sequence>
 </Activity>

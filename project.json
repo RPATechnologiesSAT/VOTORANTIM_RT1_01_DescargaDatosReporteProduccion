@@ -1,7 +1,7 @@
 {
   "name": "Votorantim_RT1_01_DescargaDatosReporteProduccion",
   "projectId": "1db942e2-487a-4e3e-82ea-8ad190962516",
-  "description": "Dispatcher - Coordination framework designed to classify and distribute transaction items to Orchestrator queues.",
+  "description": "Este proceso se encarga de descargar plantillas de Excel desde una carpeta compartida y realizar las siguientes acciones en SAP:\n\nTransacción SE16N: Se utiliza para rellenar la plantilla correspondiente.\nTransacción ZGCSD004: Se usa para gestionar el OTD (On-Time Delivery).\nTransacción ZEUSD013: Se aplica para el LT (Lead Time).\nUna vez completadas estas tareas, el proceso sube los documentos rellenados nuevamente a la carpeta compartida. Finalmente, se envía un correo electrónico de notificació",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.23.5]",
@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "23.10.0.0",
-  "projectVersion": "1.0.5",
+  "projectVersion": "1.0.14",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -44,7 +44,22 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a2f96170-55e8-4b5e-b364-149049ba6c7c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Process\\SAP_Transaction_ZEUSD013TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "92628eba-71e3-4fab-90ff-8d2ac62eb5b5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Process\\SAP_Transaction_SE16N_TestCase.xaml"
+      }
+    ],
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
